@@ -9,29 +9,29 @@ export const metadata = {
 
 const timeline = [
   {
-    year: '2022',
-    detail:
-      'First exposure to coding. Started learning basic programming out of curiosity. Did not understand much, but liked the idea that logic could create things.'
-  },
-  {
-    year: '2023',
-    detail:
-      'Discovered trading, then questioned it. Got into forex/gold, realized most content was noise. Started focusing more on process, journaling, and understanding decisions instead of chasing signals.'
-  },
-  {
     year: '2024',
     detail:
-      'Systems over motivation. Tried tracking everything manually. Got tired. Built small scripts and tools to make the process easier. That is when automation started making sense.'
+      'Explored AI, digital marketing, e-commerce, and analytics. Started thinking long-term instead of chasing trends.'
   },
   {
-    year: '2025',
+    year: 'Jan-Feb 2025',
     detail:
-      'Building tools instead of excuses. More time spent building dashboards, journals, and small systems. Less time consuming productive-looking content.'
+      'Entered intraday trading (breakout focus) while starting to code: WhatsApp bot (Baileys), SofyanTech, chatbot experiments.'
+  },
+  {
+    year: 'Mar-Jun 2025',
+    detail:
+      'Builder mode: portfolio website, Pine Script, MT5 EA for XAUUSD. Started thinking in systems (RR, time filters, SL/TP).'
+  },
+  {
+    year: 'May-Aug 2025',
+    detail:
+      'Shift toward data engineering: Streamlit + Python dashboards, project structure, foundation reset, Docker.'
   },
   {
     year: '2026',
     detail:
-      'Learning in public, building in silence. Now focused on software engineering, data, and documenting the process honestly. No hype, no shortcuts.'
+      'Consolidation phase: personal website, personal brand, cleaner execution, and technical details such as trading timezone handling.'
   }
 ];
 
@@ -42,21 +42,54 @@ export default function AboutPage() {
     <div className="container-page space-y-16 py-16">
       <section className="max-w-3xl space-y-6">
         <p className="text-sm uppercase tracking-[0.3em] text-muted">About</p>
-        <h1 className="font-heading text-4xl">Quiet systems, honest work.</h1>
+        <h1 className="font-heading text-4xl">About</h1>
         <p className="text-lg text-muted">
-          I am a student who likes to build things that keep working when attention is low.
-          My interest sits at the intersection of software engineering, automation, and data
-          that actually changes decisions.
+          I'm Sofyan. I'm currently in vocational school, but since 2024 I've been following
+          one consistent pattern: learn fast, build output, then refine the foundation so it
+          can be used long-term.
         </p>
         <p className="text-lg text-muted">
-          I prefer small systems with clear feedback loops. The goal is steady progress, not
-          loud launches. I write notes to refine the thinking and keep the process honest.
+          I initially explored areas around digital business and money: AI, marketing,
+          e-commerce, analytics. It didn't take long to realize that theory alone doesn't move
+          the needle. That's when I started looking for environments that forced me to build
+          systems and make real decisions.
+        </p>
+        <p className="text-lg text-muted">
+          In early 2025, I began trading intraday with a breakout focus. Not for lifestyle or
+          hype, but as a discipline exercise: rules, sessions, risk-reward. Around the same
+          time, my coding journey started. I built a WhatsApp bot using Baileys, created
+          SofyanTech as a way to practice packaging skills, and experimented with simple
+          chatbots, choosing my own approach instead of following tutorials blindly.
+        </p>
+        <p className="text-lg text-muted">
+          Q2 2025 became builder mode. I built a portfolio site, worked with Pine Script, and
+          entered the world of MT5 expert advisors for XAUUSD. That phase taught me something
+          important: without clean data and proper statistics, AI is just an expensive
+          accessory.
+        </p>
+        <p className="text-lg text-muted">
+          By mid 2025, my focus shifted toward engineering. I built a sales dashboard using
+          Streamlit and Python, started caring about project structure, and restarted my
+          foundation using Docker. I wanted systems that were reproducible and reliable, not
+          something that only worked on my laptop.
+        </p>
+        <p className="text-lg text-muted">
+          Outside of technical work, I stay realistic. I save regularly, think about
+          investment paths appropriate for my age, and have applied for part-time work near
+          home. For me, skills need to meet the real world. Otherwise they stay theoretical.
+        </p>
+        <p className="text-lg text-muted">
+          This website is where I document what I build, what I test, and what I learn - the
+          things that actually matter.
+        </p>
+        <p className="text-lg text-muted">
+          If you want to see what I'm working on, check the Projects and Notes sections.
         </p>
         <p className="text-sm italic text-muted">I prefer quiet progress over loud intentions.</p>
       </section>
 
       <section className="space-y-6">
-        <h2 className="font-heading text-2xl">Timeline</h2>
+        <h2 className="font-heading text-2xl">Journey</h2>
         <ul className="space-y-4">
           {timeline.map((item) => (
             <li key={item.year} className="card flex flex-col gap-2 md:flex-row md:items-center">

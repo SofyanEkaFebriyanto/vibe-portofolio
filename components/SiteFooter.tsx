@@ -13,7 +13,10 @@ export const SiteFooter = () => {
       <div className="container-page flex flex-col items-start justify-between gap-6 py-10 md:flex-row md:items-center">
         <div className="text-sm text-muted">
           <p className="font-heading text-base text-text">Sofyan Eka Febriyanto</p>
-          <p>Systems, process, and data-first building.</p>
+          <p>
+            Sofyan. Vocational student. Focused on software, data, and decision-making systems. I
+            build things that actually work, not just ideas.
+          </p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm text-muted">
           {footerLinks.map((item) => (

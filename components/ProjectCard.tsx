@@ -14,6 +14,28 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </span>
           ))}
         </div>
+        <dl className="grid gap-3 text-sm text-muted">
+          <div>
+            <dt className="font-semibold text-text">Context</dt>
+            <dd>{project.context}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-text">Problem</dt>
+            <dd>{project.problem}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-text">Approach</dt>
+            <dd>{project.approach}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-text">Result</dt>
+            <dd>{project.result}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-text">Lessons learned</dt>
+            <dd>{project.lessons}</dd>
+          </div>
+        </dl>
       </div>
       <div className="flex flex-wrap gap-4 text-sm">
         {project.links.map((link, index) =>

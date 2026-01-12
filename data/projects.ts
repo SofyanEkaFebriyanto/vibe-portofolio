@@ -24,7 +24,7 @@ export const projects: Project[] = [
     result: 'Weekly reviews now take minutes, with trend insights that guide better risk control.',
     lessons: 'Good dashboards are opinions with evidence, not just charts.',
     stack: ['Next.js', 'TypeScript', 'D3', 'PostgreSQL'],
-    links: [{ label: 'Private for now' }, { label: 'Demo coming soon' }],
+    links: [{ label: 'Internal project' }],
     image: '/images/projects/trading-journal.svg',
     featured: true
   },
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     result: 'Tasks that took an hour now finish in under five minutes.',
     lessons: 'Automation works best when it reports back, not just runs.',
     stack: ['Python', 'Bash', 'SQLite'],
-    links: [{ label: 'Private for now' }, { label: 'Demo coming soon' }],
+    links: [{ label: 'Private for now' }],
     image: '/images/projects/automation-tool.svg'
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     result: 'Pages are fast, predictable, and easy to extend.',
     lessons: 'Structure first, polish second, launch always.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    links: [{ label: 'Private for now' }, { label: 'Demo coming soon' }],
+    links: [{ label: 'Private for now' }],
     image: '/images/projects/nextjs-web-app.svg'
   },
   {
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     result: 'Readers can understand the takeaway in under a minute.',
     lessons: 'If you cannot explain it, do not visualize it.',
     stack: ['TypeScript', 'Observable', 'SVG'],
-    links: [{ label: 'Private for now' }, { label: 'Demo coming soon' }],
+    links: [{ label: 'Private for now' }],
     image: '/images/projects/data-viz-mini.svg'
   }
 ];

@@ -25,8 +25,8 @@ export default async function HomePage() {
             Building with code. Thinking with data.
           </h1>
           <p className="text-lg text-muted">
-            Student exploring software engineering, automation, and data-driven decision-making.
-            Learning in public, building systems that actually work.
+            Sofyan. Vocational student. Focused on software, data, and decision-making systems.
+            I build things that actually work, not just ideas.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
