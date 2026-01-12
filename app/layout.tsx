@@ -47,12 +47,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Sofyan Eka Febriyanto',
   url: 'https://sofyanekafebriyanto.my.id',
-  jobTitle: 'Student',
-  sameAs: [
-    'https://github.com/username',
-    'https://linkedin.com/in/username',
-    'https://x.com/username'
-  ]
+  jobTitle: 'Student'
 };
 
 export default function RootLayout({

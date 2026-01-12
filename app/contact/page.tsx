@@ -6,14 +6,14 @@ export const metadata = {
   description: 'Reach out to Sofyan for collaboration or thoughtful conversations.'
 };
 
-const email = 'hello@sofyanekafebriyanto.my.id';
+const email = 'sofyanekafebriyanto@gmail.com';
 
 export default function ContactPage() {
   return (
     <div className="container-page space-y-16 py-16">
       <section className="max-w-2xl space-y-4">
         <p className="text-sm uppercase tracking-[0.3em] text-muted">Contact</p>
-        <h1 className="font-heading text-4xl">Build something useful together.</h1>
+        <h1 className="font-heading text-4xl">If it's useful, I'm in.</h1>
         <p className="text-lg text-muted">
           If you want to collaborate or exchange ideas, reach out.
         </p>
@@ -79,13 +79,13 @@ export default function ContactPage() {
           <div className="card space-y-4">
             <p className="text-sm text-muted">Social</p>
             <div className="flex flex-col gap-3 text-sm">
-              <Link href="https://github.com/username" className="text-accent">
+              <Link href="https://github.com/SofyanEkaFebriyanto" className="text-accent">
                 GitHub
               </Link>
-              <Link href="https://linkedin.com/in/username" className="text-accent">
+              <Link href="https://linkedin.com/in/sofyan-eka-febriyanto" className="text-accent">
                 LinkedIn
               </Link>
-              <Link href="https://x.com/username" className="text-accent">
+              <Link href="https://x.com/SofyanEkaFebriyanto" className="text-accent">
                 X
               </Link>
             </div>

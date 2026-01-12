@@ -8,11 +8,31 @@ export const metadata = {
 };
 
 const timeline = [
-  { year: '2022', detail: 'Started documenting learning with short weekly summaries.' },
-  { year: '2023', detail: 'Built my first data dashboard for personal trading reviews.' },
-  { year: '2024', detail: 'Focused on automation tools that reduce manual work.' },
-  { year: '2025', detail: 'Deepened focus on clean systems and reliable delivery.' },
-  { year: '2026', detail: 'Sharing notes publicly and building slower, stronger foundations.' }
+  {
+    year: '2022',
+    detail:
+      'First exposure to coding. Started learning basic programming out of curiosity. Did not understand much, but liked the idea that logic could create things.'
+  },
+  {
+    year: '2023',
+    detail:
+      'Discovered trading, then questioned it. Got into forex/gold, realized most content was noise. Started focusing more on process, journaling, and understanding decisions instead of chasing signals.'
+  },
+  {
+    year: '2024',
+    detail:
+      'Systems over motivation. Tried tracking everything manually. Got tired. Built small scripts and tools to make the process easier. That is when automation started making sense.'
+  },
+  {
+    year: '2025',
+    detail:
+      'Building tools instead of excuses. More time spent building dashboards, journals, and small systems. Less time consuming productive-looking content.'
+  },
+  {
+    year: '2026',
+    detail:
+      'Learning in public, building in silence. Now focused on software engineering, data, and documenting the process honestly. No hype, no shortcuts.'
+  }
 ];
 
 const toolbelt = ['TypeScript', 'Next.js', 'Python', 'SQL', 'Tailwind CSS', 'Git'];
@@ -32,6 +52,7 @@ export default function AboutPage() {
           I prefer small systems with clear feedback loops. The goal is steady progress, not
           loud launches. I write notes to refine the thinking and keep the process honest.
         </p>
+        <p className="text-sm italic text-muted">I prefer quiet progress over loud intentions.</p>
       </section>
 
       <section className="space-y-6">

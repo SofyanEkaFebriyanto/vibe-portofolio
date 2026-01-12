@@ -18,6 +18,11 @@ export default function NowPage() {
         <p className="text-sm text-muted">Last updated: {nowContent.lastUpdated}</p>
       </section>
 
+      <section className="card max-w-2xl space-y-3">
+        <h2 className="font-heading text-xl">One thing I am trying to get better at this month</h2>
+        <p className="text-sm text-muted">Staying consistent even when motivation is low.</p>
+      </section>
+
       <section className="grid gap-6 md:grid-cols-2">
         <div className="card space-y-4">
           <h2 className="font-heading text-2xl">Currently focused on</h2>

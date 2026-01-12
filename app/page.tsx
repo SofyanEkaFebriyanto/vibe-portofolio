@@ -20,7 +20,7 @@ export default async function HomePage() {
     <div className="space-y-24 py-16">
       <section className="container-page space-y-10">
         <div className="max-w-3xl space-y-6 animate-fade-up">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted">Personal site</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-muted">Systems, not noise.</p>
           <h1 className="font-heading text-4xl leading-tight md:text-6xl">
             Building with code. Thinking with data.
           </h1>
