@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { CopyEmailButton } from '@/components/CopyEmailButton';
 
 export const metadata = {
