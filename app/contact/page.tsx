@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { CopyEmailButton } from '@/components/CopyEmailButton';
 
 export const metadata = {
@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Reach out to Sofyan for collaboration or thoughtful conversations.'
 };
 
-const email = 'hello@sofyanekafebriyanto.my.id';
+const email = 'sofyanekafebriyanto@gmail.com';
 
 export default function ContactPage() {
   return (
@@ -79,13 +79,13 @@ export default function ContactPage() {
           <div className="card space-y-4">
             <p className="text-sm text-muted">Social</p>
             <div className="flex flex-col gap-3 text-sm">
-              <Link href="https://github.com/username" className="text-accent">
+              <Link href="https://github.com/SofyanEkaFebriyanto" className="text-accent">
                 GitHub
               </Link>
-              <Link href="https://linkedin.com/in/username" className="text-accent">
+              <Link href="https://linkedin.com/in/sofyan-eka-febriyanto" className="text-accent">
                 LinkedIn
               </Link>
-              <Link href="https://x.com/username" className="text-accent">
+              <Link href="https://x.com/SofyanEkaFebriyanto" className="text-accent">
                 X
               </Link>
             </div>
