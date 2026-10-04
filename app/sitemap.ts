@@ -1,12 +1,12 @@
 ﻿import type { MetadataRoute } from 'next';
 import { getAllNotes } from '@/lib/notes';
 
-const baseUrl = 'https://sofyanekafebriyanto.my.id';
+const baseUrl = 'https://sefy.my.id';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const notes = await getAllNotes();
 
-  const routes = ['', '/about', '/notes', '/projects', '/now', '/contact', '/resume'].map(
+  const routes = ['', '/about', '/services', '/notes', '/projects', '/now', '/contact', '/resume'].map(
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date()

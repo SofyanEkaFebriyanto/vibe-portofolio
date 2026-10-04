@@ -15,7 +15,7 @@ export default function NowPage() {
     <div className="container-page space-y-10 py-16">
       <section className="max-w-2xl space-y-4">
         <p className="text-sm uppercase tracking-[0.3em] text-muted">Now</p>
-        <h1 className="font-heading text-4xl">Now</h1>
+        <h1 className="font-heading text-3xl md:text-4xl">Now</h1>
       </section>
 
       <section className="card max-w-3xl space-y-4">

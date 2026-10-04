@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/'
     },
-    sitemap: 'https://sofyanekafebriyanto.my.id/sitemap.xml'
+    sitemap: 'https://sefy.my.id/sitemap.xml'
   };
 }

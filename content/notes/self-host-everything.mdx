@@ -1,0 +1,24 @@
+---
+title: "Why I self-host everything on a small box"
+date: "2026-10-04"
+excerpt: "My entire infrastructure runs on a tiny ARM box at home. Constraints are a feature."
+tags: ["homelab", "self-hosting", "infrastructure"]
+---
+
+Everything I build runs on a small ARM set-top box sitting in my room. It hosts my AI gateway, my voice assistant, this portfolio, and a tunnel that exposes it all.
+
+## Why not just use the cloud?
+
+Cost is the obvious answer, but it is not the real one. The real answer is ownership. When something breaks at night, I can log in and fix it. No dashboards, no support tickets, no surprise bills. I know every process running on that box.
+
+## Constraints are a feature
+
+Limited RAM forces discipline. My Go binaries are tiny. My portfolio is static files. There is no room for bloat, so bloat never arrives. Every service earns its place.
+
+Small disk taught me what actually matters: code and data. Caches are regenerable. Logs rotate. If it cannot be rebuilt, it gets backed up.
+
+## What it taught me
+
+Self-hosting turned deployment from a scary word into a habit. Pull, build, restart. Done in a minute. That loop is the reason I ship as often as I do.
+
+You do not need expensive infrastructure to build real things. You need a box you understand.

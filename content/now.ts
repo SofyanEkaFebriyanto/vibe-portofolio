@@ -1,19 +1,19 @@
-﻿export const nowContent = {
-  lastUpdated: '2026-01-12',
+export const nowContent = {
+  lastUpdated: '2026-10-04',
   focusedOn: [
-    'Building small, reliable systems that reduce manual decisions.',
-    'Tracking personal data to improve feedback loops.',
-    'Writing notes that explain the "why", not just the "how".'
+    'Growing Noir — my voice AI assistant — toward an agent that truly acts on my machines.',
+    'Going deep on Go: backends, tooling, and systems thinking.',
+    'Keeping my homelab STB healthy: it hosts everything I build.'
   ],
   learning: [
-    'Advanced TypeScript patterns and clean APIs.',
-    'Practical data visualization and storytelling.',
-    'Automation patterns that scale beyond scripts.'
+    'Go internals: concurrency patterns, clean APIs, deployment.',
+    'LLM agent loops: tool calling, memory consolidation, proactive behavior.',
+    'Linux ops: systemd, tunnels, reverse proxies, monitoring.'
   ],
   building: [
-    'A trading journal dashboard with strong defaults.',
-    'Automation utilities for repetitive admin tasks.',
-    'A personal knowledge base built in public.'
+    'Noir App — voice-to-voice AI with tools and memory, live 24/7.',
+    'URL shortener with analytics (Go + React).',
+    'This site — static, fast, hosted on my own homelab.'
   ],
   avoiding: 'Shiny tools without clear leverage. I only add new tech when it lowers long-term effort.'
 };

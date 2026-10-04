@@ -10,7 +10,7 @@ export default function ResumePage() {
     <div className="container-page space-y-12 py-16">
       <section className="max-w-2xl space-y-4">
         <p className="text-sm uppercase tracking-[0.3em] text-muted">Resume</p>
-        <h1 className="font-heading text-4xl">A short, readable snapshot.</h1>
+        <h1 className="font-heading text-3xl md:text-4xl">A short, readable snapshot.</h1>
         <p className="text-lg text-muted">
           I keep this page updated with the essentials. If you need the PDF, grab it below.
         </p>

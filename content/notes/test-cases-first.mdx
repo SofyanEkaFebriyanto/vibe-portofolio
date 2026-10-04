@@ -1,0 +1,27 @@
+---
+title: "136 test cases before a single feature"
+date: "2026-10-04"
+excerpt: "For a competency exam API, I wrote 136 test cases first. It made the implementation calmer — here's what that discipline looks like."
+tags: ["testing", "laravel", "process"]
+---
+
+For a vocational competency exam API, I wrote **136 test cases** before considering the implementation done: 58 positive, 78 negative. It sounds excessive. It wasn't.
+
+## Why so many negatives?
+
+Positive cases prove the happy path works. Negative cases prove the system doesn't lie. For an exam system, the negative cases *are* the product: wrong role gets 403, expired token gets 401, double submission gets rejected. If any of those silently pass, the exam is compromised.
+
+## What changed in how I code
+
+Writing tests first inverted my workflow:
+
+- **Before**: write code, manually click through, hope I covered the edges.
+- **After**: the spreadsheet *is* the spec. Implementation becomes filling in boxes.
+
+Bugs stopped being surprises. When a test failed, it pointed at the exact line of thinking that was wrong — not just the line of code.
+
+## The unsexy truth
+
+Nobody demos test cases. But the confidence they give you is what lets you refactor without fear and deploy without anxiety. For boringly-correct systems — exams, payments, auth — tests aren't overhead. They're the job.
+
+Write the test. Then write the code. Future you will be calmer.

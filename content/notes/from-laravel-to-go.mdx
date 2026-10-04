@@ -1,0 +1,24 @@
+---
+title: "From Laravel to Go: what changed in my head"
+date: "2026-10-04"
+excerpt: "I started with Laravel and Flutter. Now I'm going deep on Go. The languages are different, but the real shift is mental."
+tags: ["go", "laravel", "learning"]
+---
+
+My background is Laravel and Flutter. Now I'm learning Go. People ask if it's hard to switch. Honestly, the syntax is the easy part. The hard part is unlearning habits.
+
+## What Laravel gave me
+
+Laravel taught me how web apps are supposed to be structured: routing, middleware, ORM, queues. It is a framework with opinions, and those opinions were my training wheels. I still think in terms of request lifecycle because of Laravel.
+
+## What Go is teaching me
+
+Go has fewer opinions and less magic. There is no ORM doing clever things behind your back. At first that felt like a step backward. Then I realized I actually understand what is happening now.
+
+Three specific shifts. First, errors are values, not exceptions. Handling every error explicitly is verbose, but my Go code fails loudly instead of mysteriously. Second, concurrency is a primitive, not a library. Goroutines changed how I think about background work. Third, small binaries and fast deploys. A 20 MB static binary that I can copy anywhere ruined heavy containers for my small projects.
+
+## The real lesson
+
+Learning a second backend language did not just add a tool. It made me better at the first one. I now write Laravel code with a healthy suspicion of magic.
+
+Learn the thing that makes you uncomfortable. That is where the growth is.

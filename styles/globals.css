@@ -11,6 +11,15 @@
   --border: 215 19% 85%;
 }
 
+.dark {
+  --bg: 222 35% 9%;
+  --text: 210 25% 94%;
+  --muted: 215 14% 62%;
+  --accent: 199 85% 62%;
+  --card: 222 30% 13%;
+  --border: 215 20% 22%;
+}
+
 * {
   text-rendering: optimizeLegibility;
 }

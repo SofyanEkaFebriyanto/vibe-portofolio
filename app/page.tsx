@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link';
+import Image from 'next/image';
 import { values } from '@/data/values';
 import { projects } from '@/data/projects';
 import { nowContent } from '@/content/now';
@@ -8,7 +9,7 @@ import { formatDate } from '@/lib/format';
 export const metadata = {
   title: 'Home',
   description:
-    'Personal site of Sofyan Eka Febriyanto. Notes, projects, and systems thinking.'
+    'Sofyan Eka Febriyanto — software developer (Laravel, Flutter, Go). Backend APIs, mobile apps, and self-hosted systems.'
 };
 
 export default async function HomePage() {
@@ -19,28 +20,40 @@ export default async function HomePage() {
   return (
     <div className="space-y-24 py-16">
       <section className="container-page space-y-10">
-        <div className="max-w-3xl space-y-6 animate-fade-up">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted">Systems, not noise.</p>
-          <h1 className="font-heading text-4xl leading-tight md:text-6xl">
-            Building with code. Thinking with data.
-          </h1>
-          <p className="text-lg text-muted">
-            Sofyan. Vocational student. Focused on software, data, and decision-making systems.
-            I build things that actually work, not just ideas.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/notes"
-              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-subtle transition hover:brightness-110"
-            >
-              Read Notes
-            </Link>
-            <Link
-              href="/projects"
-              className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-text transition hover:border-accent hover:text-accent"
-            >
-              See Projects
-            </Link>
+        <div className="flex flex-col-reverse items-center text-center gap-8 md:flex-row md:items-center md:text-left animate-fade-up">
+          <div className="max-w-2xl space-y-6">
+            <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-muted">Sofyan Eka Febriyanto</p>
+            <h1 className="font-heading text-3xl leading-tight md:text-6xl">
+              Building with code. Thinking with data.
+            </h1>
+            <p className="text-base md:text-lg text-muted">
+              Software developer — Laravel &amp; Flutter background, now going deep on Go.
+              I like owning one system end-to-end: the API, the app, and the server it runs on.
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+              <Link
+                href="/projects"
+                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-subtle transition hover:brightness-110"
+              >
+                See Projects
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-text transition hover:border-accent hover:text-accent"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+          <div className="shrink-0">
+            <Image
+              src="/images/profile.jpg?v=2"
+              alt="Sofyan Eka Febriyanto"
+              width={240}
+              height={240}
+              priority
+              className="rounded-full object-cover ring-1 ring-border shadow-subtle aspect-square w-36 h-36 md:w-60 md:h-60"
+            />
           </div>
         </div>
       </section>
@@ -110,6 +123,25 @@ export default async function HomePage() {
               See now
             </Link>
           </article>
+        </div>
+      </section>
+
+      <section className="container-page">
+        <div className="card !p-10 text-center space-y-4">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted">Available for work</p>
+          <h2 className="font-heading text-3xl">Need something built?</h2>
+          <p className="text-muted max-w-xl mx-auto">
+            Backends, mobile apps, web apps, AI features, deployments.
+            I build it, ship it, and keep it running.
+          </p>
+          <div className="pt-2">
+            <Link
+              href="/services"
+              className="inline-flex rounded-full bg-accent px-8 py-3 text-sm font-semibold text-white shadow-subtle transition hover:brightness-110"
+            >
+              See services
+            </Link>
+          </div>
         </div>
       </section>
     </div>

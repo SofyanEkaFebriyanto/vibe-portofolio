@@ -31,18 +31,18 @@ const timeline = [
   {
     year: '2026',
     detail:
-      'Consolidation phase: personal website, personal brand, cleaner execution, and technical details such as trading timezone handling.'
+      'Systems phase: Noir — a voice-to-voice AI assistant with tool-calling agent and memory, live 24/7 on my homelab STB. Going deep on Go, running my own infra (tunnels, gateways, deploys).'
   }
 ];
 
-const toolbelt = ['TypeScript', 'Next.js', 'Python', 'SQL', 'Tailwind CSS', 'Git'];
+const toolbelt = ['Laravel', 'Flutter', 'Go', 'PHP', 'SQLite', 'MySQL', 'Docker', 'Linux', 'Tailwind CSS', 'Git'];
 
 export default function AboutPage() {
   return (
     <div className="container-page space-y-16 py-16">
       <section className="max-w-3xl space-y-6">
         <p className="text-sm uppercase tracking-[0.3em] text-muted">About</p>
-        <h1 className="font-heading text-4xl">About</h1>
+        <h1 className="font-heading text-3xl md:text-4xl">About</h1>
         <p className="text-lg text-muted">
           I'm Sofyan. I'm currently in vocational school, but since 2024 I've been following
           one consistent pattern: learn fast, build output, then refine the foundation so it

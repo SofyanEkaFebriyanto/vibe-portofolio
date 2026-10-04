@@ -1,0 +1,24 @@
+---
+title: "One brain, many bodies"
+date: "2026-10-04"
+excerpt: "My voice assistant runs on one shared brain — web, phone, and robot are just bodies. Here's why that architecture matters."
+tags: ["ai", "architecture", "noir"]
+---
+
+I'm building Noir, my personal AI assistant. The core architectural decision: **one brain, many bodies**.
+
+The brain lives on my homelab server. It holds the memory, runs the agent loop, makes the decisions. The bodies — a web UI, an Android app, eventually maybe a robot — are just interfaces. They capture voice, they play back speech, but they don't think.
+
+## Why this matters
+
+Most assistants tie intelligence to the device. Switch phones and you start over. My approach inverts it: the intelligence is the stable part, the interface is disposable.
+
+This also makes voice-to-voice natural. Speech-to-text and text-to-speech happen on-device (fast, private), while the LLM only ever sees text. The model doesn't need to "support voice" — it just needs to be good at thinking.
+
+## The hard parts
+
+- **Latency**: voice feels broken above ~2 seconds of silence. I added a "sebentar ya" ("one moment") cue when the agent is working through a long tool chain.
+- **Memory**: facts must be extracted async after conversations, never blocking the reply.
+- **Proactivity**: a brain that never speaks first is just a chatbot. Mine checks in — but only when it has something worth saying, and never at 3 AM.
+
+One brain, many bodies. The bodies will change. The brain keeps learning.
