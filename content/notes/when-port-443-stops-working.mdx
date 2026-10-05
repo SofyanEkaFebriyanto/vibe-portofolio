@@ -5,9 +5,9 @@ excerpt: "My sandbox proxy started resetting SSH connections. Diagnosis took lon
 tags: ["homelab", "ssh", "debugging"]
 ---
 
-Yesterday `git push` worked. Today it died with "Connection reset by peer". Nothing in my config changed. The sandbox's egress proxy had started intercepting direct SSH to ssh.github.com:443.
+Yesterday git push worked. Today it died with "Connection reset by peer". Nothing in my config changed. The sandbox's egress proxy had started intercepting direct SSH to ssh.github.com:443.
 
-Diagnosis: `curl` through the proxy with an explicit CONNECT to ssh.github.com:443 returned "200 Connection Established". So the proxy allowed the tunnel; only direct TCP was being reset. The fix was a ProxyCommand that speaks HTTP CONNECT: a small Python script that forwards the SSH stream through the proxy.
+Diagnosis: curl through the proxy with an explicit CONNECT to ssh.github.com:443 returned "200 Connection Established". So the proxy allowed the tunnel; only direct TCP was being reset. The fix was a ProxyCommand that speaks HTTP CONNECT: a small Python script that forwards the SSH stream through the proxy.
 
 Second gotcha: ssh running as root reads /root/.ssh, not $HOME. My keys lived in /home/hatch/.ssh, so after the fix the config still didn't apply. Copying config plus keys to /root/.ssh solved it. That directory is ephemeral (wiped on VM replacement), so the persistent copies stay in the workspace.
 
