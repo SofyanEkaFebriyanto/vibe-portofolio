@@ -1,0 +1,14 @@
+---
+title: "Stop writing like AI"
+date: "2026-10-05"
+excerpt: "I installed a skill that strips 20+ AI writing patterns. The interesting part was adapting it to Indonesian."
+tags: ["ai", "writing", "tooling"]
+---
+
+My Instagram captions are AI-assisted, and they started to smell like it. Same rhythms, same dramatic colons, same "Plot twist:" energy. So I installed no-ai-slop (petergyang/no-ai-slop, MIT) — a skill that detects and removes 20+ patterns of generic AI writing.
+
+The English patterns are well documented: "It's not X. It's Y.", throat-clearing openers, fake-profound closing lines, em-dash crutches. But my content is in Indonesian, and the skill's examples don't catch "Bukan X. Tapi Y." or "momen bersejarah" or "raksasa teknologi". So I wrote an adaptation layer mapping each pattern to its Indonesian equivalent.
+
+First test on my own caption found three hits: a "Plot twist-nya:" label (the fact underneath was strong enough without it), two dramatic colon reveals, and one "raksasa chip" cliché. All cut, facts untouched.
+
+The principle I kept from the skill: minimum effective edit. The goal is prose that still sounds like the person who wrote it. Now the de-slop pass runs automatically before every post goes out.

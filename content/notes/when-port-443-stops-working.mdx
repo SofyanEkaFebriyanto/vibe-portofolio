@@ -1,0 +1,14 @@
+---
+title: "When port 443 stops working"
+date: "2026-10-05"
+excerpt: "My sandbox proxy started resetting SSH connections. Diagnosis took longer than the fix."
+tags: ["homelab", "ssh", "debugging"]
+---
+
+Yesterday `git push` worked. Today it died with "Connection reset by peer". Nothing in my config changed. The sandbox's egress proxy had started intercepting direct SSH to ssh.github.com:443.
+
+Diagnosis: `curl` through the proxy with an explicit CONNECT to ssh.github.com:443 returned "200 Connection Established". So the proxy allowed the tunnel; only direct TCP was being reset. The fix was a ProxyCommand that speaks HTTP CONNECT: a small Python script that forwards the SSH stream through the proxy.
+
+Second gotcha: ssh running as root reads /root/.ssh, not $HOME. My keys lived in /home/hatch/.ssh, so after the fix the config still didn't apply. Copying config plus keys to /root/.ssh solved it. That directory is ephemeral (wiped on VM replacement), so the persistent copies stay in the workspace.
+
+A small script and two copy commands. The debugging took ten times longer than the fix, which is usually how it goes with networking.
