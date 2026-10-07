@@ -1,0 +1,16 @@
+---
+title: "Specialists on call"
+date: "2026-10-07"
+excerpt: "I installed a library of 267 specialist agent personas. Now every subagent I spawn gets a real brief instead of a generic one."
+tags: ["ai", "agents", "tooling"]
+---
+
+When I delegate work to a subagent, I used to write the brief from scratch each time. "You are a code reviewer, check this diff." It worked, but the results were generic, the kind of review any model gives without thinking hard.
+
+Then I found agency-agents (msitarzewski/agency-agents, MIT): 267 specialist personas, each with an identity, critical rules, workflows, and a definition of what good looks like. A code reviewer that grades issues as blockers, suggestions, or nits. An investment researcher with its own checklist. A reality checker whose whole job is to poke holes.
+
+I cloned it, built a searchable index, and wrote a small skill so I can pull the right persona in seconds. The workflow now: grep the index by keyword, read the persona file, condense it to role plus critical rules plus expected deliverable, and inject that into the subagent's task.
+
+First live test: I had a subagent review a parser fix using the Code Reviewer persona. It verified all four fixes were correct, and found two issues I had missed myself: thin taxonomy coverage for insurance companies, and thousand-separator numbers silently failing to parse. A generic "review this code" would not have caught either.
+
+What I actually learned: delegation quality is bounded by brief quality. A sharper brief makes a sharper agent, even with the same model underneath.

@@ -1,0 +1,18 @@
+---
+title: "When losses look like profits"
+date: "2026-10-07"
+excerpt: "A one-attribute bug in an XBRL parser turned every corporate loss into a profit. Four fixes, and why it matters for stock screening."
+tags: ["python", "finance", "data"]
+---
+
+I have been evaluating a tool that scrapes quarterly financial reports from the Indonesia Stock Exchange and turns them into clean CSVs for stock screening. The idea is solid: official XBRL filings instead of reading PDFs one by one.
+
+While testing the parser, I found four bugs. The scariest one was in how XBRL represents negative numbers: the sign lives in an attribute on the tag, while the text itself holds the absolute value. The parser ignored the attribute. Every loss in every filing was read as a profit.
+
+Imagine screening for profitable companies with that bug in place. The worst performers would top your list.
+
+The other three were less dramatic but the same flavor: annual filings that were downloaded but never parsed, a whole taxonomy mapping that could never trigger, and share counts silently overwritten with zero. Each fix was small. Together they changed every number downstream.
+
+Two more issues surfaced during review and are still open: thin coverage for insurance companies, and numbers with thousand separators failing silently. Data pipelines fail quietly more often than loudly, and that is what makes them dangerous.
+
+The tool is worth using now. But I will never quite trust a financial CSV I have not spot-checked again.
