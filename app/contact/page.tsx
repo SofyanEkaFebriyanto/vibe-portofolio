@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import { canonicalFor } from '@/lib/seo';
 import { CopyEmailButton } from '@/components/CopyEmailButton';
 
 export const metadata = {
+  alternates: canonicalFor('/contact'),
   title: 'Contact',
   description: 'Reach out to Sofyan for collaboration or thoughtful conversations.'
 };

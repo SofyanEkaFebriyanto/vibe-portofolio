@@ -1,6 +1,8 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
+import { canonicalFor } from '@/lib/seo';
 export const metadata = {
+  alternates: canonicalFor('/resume'),
   title: 'Resume',
   description: 'A short resume snapshot for Sofyan Eka Febriyanto.'
 };

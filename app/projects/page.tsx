@@ -1,9 +1,11 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
 import { ProjectCard } from '@/components/ProjectCard';
 
+import { canonicalFor } from '@/lib/seo';
 export const metadata = {
+  alternates: canonicalFor('/projects'),
   title: 'Projects',
   description: 'Selected projects focused on systems, automation, and data.'
 };

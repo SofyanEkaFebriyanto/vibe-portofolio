@@ -1,9 +1,11 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
+import { canonicalFor } from '@/lib/seo';
 import { NotesList } from '@/components/NotesList';
 import { formatDate } from '@/lib/format';
 import { getAllNotes } from '@/lib/notes';
 
 export const metadata = {
+  alternates: canonicalFor('/notes'),
   title: 'Notes',
   description: 'Notes on systems, automation, and data-first decisions.'
 };

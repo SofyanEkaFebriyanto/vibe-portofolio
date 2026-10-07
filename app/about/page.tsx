@@ -1,7 +1,9 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
+import { canonicalFor } from '@/lib/seo';
 import { values } from '@/data/values';
 
 export const metadata = {
+  alternates: canonicalFor('/about'),
   title: 'About',
   description:
     'Builder mindset, systems thinking, and the learning process behind Sofyan Eka Febriyanto.'

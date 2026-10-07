@@ -1,4 +1,5 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
+import { canonicalFor } from '@/lib/seo';
 import Image from 'next/image';
 import { values } from '@/data/values';
 import { projects } from '@/data/projects';
@@ -7,6 +8,7 @@ import { getLatestNote } from '@/lib/notes';
 import { formatDate } from '@/lib/format';
 
 export const metadata = {
+  alternates: canonicalFor('/'),
   title: 'Home',
   description:
     'Sofyan Eka Febriyanto — software developer (Laravel, Flutter, Go). Backend APIs, mobile apps, and self-hosted systems.'

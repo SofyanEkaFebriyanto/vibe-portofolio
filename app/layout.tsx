@@ -27,9 +27,6 @@ export const metadata: Metadata = {
   keywords: ['Sofyan Eka Febriyanto', 'software developer Indonesia', 'backend developer', 'Go developer', 'Laravel', 'Flutter', 'API development', 'self-hosting'],
   authors: [{ name: 'Sofyan Eka Febriyanto', url: 'https://sefy.my.id' }],
   creator: 'Sofyan Eka Febriyanto',
-  alternates: {
-    canonical: 'https://sefy.my.id'
-  },
   robots: {
     index: true,
     follow: true,

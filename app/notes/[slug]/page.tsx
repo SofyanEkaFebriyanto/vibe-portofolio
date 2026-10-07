@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import { formatDate } from '@/lib/format';
+import { canonicalFor } from '@/lib/seo';
 import { getNoteBySlug, getNoteSlugs } from '@/lib/notes';
 
 export async function generateStaticParams() {
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: note.title,
     description: note.excerpt,
+    alternates: canonicalFor(`/notes/${params.slug}`),
     openGraph: {
       title: note.title,
       description: note.excerpt,

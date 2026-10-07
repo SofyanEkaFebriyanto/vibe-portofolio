@@ -1,4 +1,7 @@
-﻿export const metadata = {
+import { canonicalFor } from '@/lib/seo';
+
+export const metadata = {
+  alternates: canonicalFor('/now'),
   title: 'Now',
   description: 'A short, current view of what Sofyan is focused on.'
 };

@@ -8,13 +8,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes = ['', '/about', '/services', '/notes', '/projects', '/now', '/contact', '/resume'].map(
     (route) => ({
-      url: `${baseUrl}${route}`,
+      url: `${baseUrl}${route}/`,
       lastModified: new Date()
     })
   );
 
   const noteRoutes = notes.map((note) => ({
-    url: `${baseUrl}/notes/${note.slug}`,
+    url: `${baseUrl}/notes/${note.slug}/`,
     lastModified: new Date(note.date)
   }));
 

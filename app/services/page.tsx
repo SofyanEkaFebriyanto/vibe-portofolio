@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
+import { canonicalFor } from '@/lib/seo';
 export const metadata = {
+  alternates: canonicalFor('/services'),
   title: 'Services',
   description: 'What I can build for you — backends, mobile apps, web apps, AI integration, and deployment.'
 };
